@@ -2,25 +2,23 @@
 
 int main() {
     int n=5;
-    int a[n+1];
+    int a[n];
     int temp;
-    for (int i = 0; i<n+1 ; i++)
+    for (int i = 0; i<n ; i++)
     {
         scanf("%d", &a[i]);
     }
-    for (int i = 0; i <=n; i++)
-    {
-        temp = a[i];
-        for (int j = n; i>=0; j--)
-        {
-            a[j] = a[i];
-            a[j] = temp;
-        }
-        
-    }
+    int i=0, j=n-1;
+    while(i<j){
+        int temp=a[i];
+        a[i] = a[j];
+        a[j]= temp;
+        i++;
+        j--;
 
-    
-    for (int i = 0; i <=n; i++)
+    }
+    //print all the values
+    for (int i = 0; i <n; i++)
     {
         printf("Index a[%d] = %d\n",i,a[i]);
     }
