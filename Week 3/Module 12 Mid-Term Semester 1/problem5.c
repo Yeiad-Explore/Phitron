@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+
 int main() {
    int n,k;
    scanf("%d %d", &n, &k);
@@ -9,10 +11,17 @@ int main() {
      {
         printf("%d ",i);
      }
+
+     
      printf("\n");
      
+
+
    }
    
     
+
+
+
     return 0;
 }
